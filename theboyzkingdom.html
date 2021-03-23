@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1{
+        border:5px solid red;
+        padding:20px;
+        margin:20px;
+        display:block;
+        width:300px;
+      }
+    </style>
+  </head>
+  <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i + 1;
+      }
+    }
+  ">
+  <body>
+    <h1>더보이즈킹덤투표부탁~^^</h1>
+    <h2>많관부많관부</h2>
+    <p><a href="https://youtu.be/c_e-IC0VwZM" target="_blank" title="더보이즈가 궁금하다면 클릭">더보이즈 뮤비 보러가기 암더스틸러~야~</a>
+    <p><a href="https://namu.wiki/w/%EB%8D%94%EB%B3%B4%EC%9D%B4%EC%A6%88" target="_blank" title="더보이즈가 궁금하다면 클릭">더보이즈 나무위키 보러가기</a>
+
+    <script>
+      var ㅗ = ["상연", "제이콥","영훈","현재","주연","케빈","큐","뉴","학년","선우","에릭"];
+    </script>
+    <h2>멤버이름들</h2>
+    <script>
+      var i = 0;
+      while(i < ㅗ.length){
+        document.write('<li><a href="https://namu.wiki/w/'+ㅗ[i]+'">'+ㅗ[i]+'</a></li>');
+        i = i+1;
+      }
+    </script>
+    <h4>멤버는 모두 몇명?</h4>
+    <script>
+      document.write(ㅗ.length);
+    </script>
+  </body>
+</html>
